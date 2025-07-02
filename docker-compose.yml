@@ -11,11 +11,6 @@ services:
     depends_on:
       - php
 
-  php:
-    build: ./docker/php
-    volumes:
-      - ./src:/var/www/
-
   mysql:
     image: mysql:8.0.26
     environment:
@@ -40,3 +35,12 @@ services:
       - mysql
     ports:
       - 8080:80
+
+  node:
+    build: ./docker/node
+    image: node-express-dev:1.0
+    tty: true
+    volumes:
+      - ./node/app:/app
+    ports:
+      - "3000:3000"
