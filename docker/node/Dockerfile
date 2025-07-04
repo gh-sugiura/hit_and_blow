@@ -13,3 +13,5 @@ WORKDIR /app
 
 # ポート3000番を開放する
 EXPOSE 3000
+
+CMD ["npm", "run", "dev"]
