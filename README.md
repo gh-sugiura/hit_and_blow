@@ -1,13 +1,15 @@
 # Hit and Blow
 
+## 目的
+* 下記参考書に沿ってTypeScriptの基礎を学習する
 
-## 背景・目的
-* アイテムの出品と購入を行うためのフリマアプリを開発
-* （模擬案件②を通して実践に近い開発経験を積み、定義された要件を実装する能力を身につける）
-
+## 参考書
+* タイトル：手を動かしながら学ぶTypeScript
+* 出版：C&R研究所
+* リンク：
 
 ## アプリケーションURL
-* トップ画面:
+* トップ画面：
 
 
 ## Gitリポジトリ
@@ -30,13 +32,13 @@
 
 ## 環境構築
 **Dockerビルド**
-1. `git clone git@github.com:coachtech-material/laravel-docker-template.git [ローカルリポジトリディレクトリ名]`
+1. `git clone git@github.com:coachtech-material/laravel-docker-template.git ローカルリポジトリディレクトリ名`
 2. Gitリモートリポジトリ作成
 3. GitリモートリポジトリとGitローカルリポジトリの紐付け
 4. `docker-compose up -d --build`
 
 **Node.js環境構築**
-1. `docker-compose exec php bash`:PHPコンテナにログイン
+1. `docker-compose exec node bash`:nodeコンテナにログイン
 2. `composer install`:composerのインストール
 3. .env.exampleファイルから.envファイルを作成し、環境変数を設定
 4. `php artisan key:generate`:アプリケーションキーの生成
